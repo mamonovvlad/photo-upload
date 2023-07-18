@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//Импорты утилит
+@import "utils/reset";
+@import "utils/mixin";
+@import "utils/fonts";
+@import "utils/vars";
+@import "utils/animate";
+@import "utils/helpers";
+
+
+body {
+  font-size: 14px;
+  font-weight: 400;
+  overflow-x: hidden;
+  font-family: var(--font-family);
+  @include _768 {
+    font-size: 12px;
+  }
+}
+
+
+button,
+input,
+textarea {
+  font-family: var(--font-family);
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 100%;
+  max-width: 1240px;
+  @include _1200 {
+    max-width: 992px;
+  }
+  @include _992 {
+    max-width: 768px;
+  }
+  @include _768 {
+    max-width: 576px;
+  }
+  @include _576 {
+    max-width: 320px;
+  }
+}

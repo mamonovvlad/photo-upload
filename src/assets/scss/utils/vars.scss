@@ -1,0 +1,16 @@
+:root {
+  --transparent: transparent;
+  --radius-ten: 10px;
+  --radius-eigh: 8px;
+  --radius-four: 4px;
+  --transition: all 0.4s ease-in-out;
+  --font-family: 'Montserrat', sans-serif;
+}
+
+//Light Theme
+[data-theme="light"] {
+}
+
+//Dark Theme
+[data-theme="dark"] {
+}
